@@ -4,7 +4,6 @@ import { AiOutlineCamera } from 'react-icons/ai'
 
 import { MdOndemandVideo } from 'react-icons/md'
 
-/* eslint-disable @next/next/no-img-element */
 export default function Header() {
   return (
     <div className="h-24 text-center pt-6 lg:pt-8 flex items-center justify-between font-semibold text-sm text-slate-200">
