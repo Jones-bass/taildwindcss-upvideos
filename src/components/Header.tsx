@@ -1,12 +1,11 @@
 import Link from 'next/link'
 import { FaRegUserCircle, FaSearch } from 'react-icons/fa'
-import { AiOutlineCamera } from 'react-icons/ai'
 
 import { MdOndemandVideo } from 'react-icons/md'
 
 export default function Header() {
   return (
-    <div className="h-24 text-center pt-6 lg:pt-8 flex items-center justify-between font-semibold text-sm text-slate-200">
+    <div className="h-24 px-4 sm:px-6 md:px-8 text-center pt-6 lg:pt-8 flex items-center justify-between font-semibold text-sm text-slate-200 bg-slate-900">
       <div className="text-slate-200 gap-1 flex text-center items-center h-10">
         <a href="/">
           <div className="text-white text-xs md:text-sm lg:text-base font-normal">
@@ -29,28 +28,13 @@ export default function Header() {
         </div>
       </div>
 
-      <ul className="flex items-center gap-1 md:gap-4">
+      <ul className="flex items-center gap-2 md:gap-4">
         <li>
-          <Link
-            href="https://github.com/Jones-bass"
-            target="_blank"
-            aria-label="Jones Souza Github"
-            rel="noreferrer"
-          >
+          <Link href="/upvideos" rel="noreferrer">
             <MdOndemandVideo
               size={20}
               className="cursor-pointer text-xl sm:text-2xl hover:text-violet-500"
             />
-          </Link>
-        </li>
-        <li>
-          <Link
-            href="https://github.com/Jones-bass"
-            target="_blank"
-            aria-label="Jones Souza Github"
-            rel="noreferrer"
-          >
-            <AiOutlineCamera className="cursor-pointer text-xl sm:text-2xl hover:text-violet-500" />
           </Link>
         </li>
         <li>
