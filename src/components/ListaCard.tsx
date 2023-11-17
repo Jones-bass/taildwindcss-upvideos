@@ -2,13 +2,7 @@
 import Image from 'next/image'
 import imgLogo from '../assets/images.png'
 import { AiFillCheckCircle, AiFillEye, AiFillLike } from 'react-icons/ai'
-
-interface ListProps {
-  autor: string
-  like: string
-  percentage: string
-  description: string
-}
+import { ListProps } from '@/context/FetchContext.tsx'
 
 export default function ListaCard({
   autor,
@@ -19,7 +13,7 @@ export default function ListaCard({
   return (
     <li className="text-sm leading-6">
       <figure className="relative flex flex-col-reverse rounded-lg p-6">
-        <blockquote className="mt-2 text-slate-200">
+        <blockquote className="mt-2 text-slate-300">
           <div className="justify-between flex">
             <div className="mt-0.5 flex gap-1 items-center">
               <p>{autor}</p> <AiFillCheckCircle />
@@ -32,10 +26,9 @@ export default function ListaCard({
             </div>
             <div></div>
           </div>
-          <div className="text-base text-slate-900 font-semibold dark:text-slate-300">
-            <span className="absolute inset-0"></span>
-            {description} is not a funcion f*dendo dev em reunião de
-            apresentação
+          <div className="text-base text-slate-200 font-semibold">
+            <span className="absolute inset-0 "></span>
+            {description}
           </div>
         </blockquote>
 
